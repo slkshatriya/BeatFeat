@@ -67,7 +67,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Energy You'll Burn"
+                android:text="Faster You'll Burn"
                 android:textColor="#fff"
                 android:textSize="16sp"
                 android:layout_marginStart="10dp"
@@ -76,7 +76,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="250 Calories"
+                android:text="Your Calories"
                 android:textColor="#fff"
                 android:layout_marginStart="10dp"
                 android:fontFamily="sans-serif-light"

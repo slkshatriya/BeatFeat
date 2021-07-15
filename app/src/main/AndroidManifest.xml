@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/fiticon"
         android:supportsRtl="true"
         android:theme="@style/Theme.BeatFeat">
-        <activity android:name=".activity.FifteenExercise"></activity>
+        <activity android:name=".activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.FifteenExercise" />
         <activity android:name=".activity.FourteenExercise" />
         <activity android:name=".activity.ThirteenExercise" />
         <activity android:name=".activity.TwelveExercise" />
@@ -25,11 +32,7 @@
         <activity android:name=".activity.SecExercise" />
         <activity android:name=".activity.FirstExercise" />
         <activity android:name=".activity.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

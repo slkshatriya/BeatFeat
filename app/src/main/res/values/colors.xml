@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="sky">#4fc6fc</color>
+    <color name="cardColor">#35363a</color>
+    <color name="textColor">#FF7F50</color>
 </resources>

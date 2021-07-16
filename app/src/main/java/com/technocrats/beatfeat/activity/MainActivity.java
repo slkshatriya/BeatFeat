@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         ImageSlider imageSlider = findViewById(R.id.image_slider);
         List<SlideModel> slideModels = new ArrayList<>();
+        slideModels.add(new SlideModel(R.drawable.cr1, "Feat And Beat", ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.cr2, "Workouts At Home", ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.cr3, "Anytime Anywhere", ScaleTypes.FIT));
 

@@ -1,7 +1,11 @@
 package com.technocrats.beatfeat.adapter;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +33,7 @@ import com.technocrats.beatfeat.model.model;
 import java.util.List;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class ProductAdapter1 extends RecyclerView.Adapter<ProductAdapter1.ProductViewHolder> {
@@ -56,96 +61,142 @@ public class ProductAdapter1 extends RecyclerView.Adapter<ProductAdapter1.Produc
         holder.prodPrice.setText(productsList.get(position).getProductPrice());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(View view) {
 
                 if (position == 0) {
                     Intent i = new Intent(context, FirstExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 1) {
                     Intent i = new Intent(context, SecExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 2) {
                     Intent i = new Intent(context, ThirdExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 3) {
                     Intent i = new Intent(context, FourExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 4) {
                     Intent i = new Intent(context, FiveExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 5) {
                     Intent i = new Intent(context, SixExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 6) {
                     Intent i = new Intent(context, SevenExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 7) {
                     Intent i = new Intent(context, EightExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 8) {
                     Intent i = new Intent(context, NineExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 9) {
                     Intent i = new Intent(context, TenExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 10) {
                     Intent i = new Intent(context, ElevenExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 11) {
                     Intent i = new Intent(context, TwelveExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 12) {
                     Intent i = new Intent(context, ThirteenExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 13) {
                     Intent i = new Intent(context, FourteenExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
                 if (position == 14) {
                     Intent i = new Intent(context, FifteenExercise.class);
-                    context.startActivity(i);
+                    Pair[] pairs = new Pair[1];
+                    pairs[0] = new Pair<View, String>(holder.prodImage, "image");
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+                    context.startActivity(i, activityOptions.toBundle());
 
                 }
 
